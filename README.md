@@ -160,8 +160,8 @@ For this calculation we use Diffie Hellman's cyclic key generation:
 def generateSharedKey(public_key: int, private_key: int, n: int) -> int:
     return pow(public_key, private_key, n)
 
-shared_key1 = generateSharedKey(public_key2, private_key1, n) # this will be runned on client 1
-shared_key2 = generateSharedKey(public_key1, private_key2, n) # this will be runned on client 2
+shared_key1 = generateSharedKey(public_key2, private_key1, n) # this will be run on client 1
+shared_key2 = generateSharedKey(public_key1, private_key2, n) # this will be run on client 2
 
 shared_key1, shared_key2
 ```
